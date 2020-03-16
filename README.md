@@ -1,2 +1,2 @@
-# test-algo-action
+# test-algo github action
 A github action designed to test an algorithm on www.algorithmia.com, with a given input/expected output.
