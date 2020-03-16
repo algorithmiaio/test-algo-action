@@ -1,6 +1,9 @@
 # action.yml
 name: 'Algorithmia test-algo'
 description: 'End-to-end testing of algorithms hosted on Github'
+branding:
+  icon: 'alert-circle'
+  color: 'purple'
 inputs:
   api_key:
     description: 'your Algorithmia API key'
