@@ -1,0 +1,30 @@
+# action.yml
+name: 'Algorithmia test-algo'
+description: 'End-to-end testing of algorithms hosted on Github'
+inputs:
+  api_key:
+    description: 'your Algorithmia API key'
+    required: true
+  api_address:
+    description: 'The API address for the Algorithmia Cluster you wish to connect to'
+    required: false
+    default: 'https://api.algorithmia.com'
+  algorithm_name:
+    description: 'The name of the Algorithm you want to test'
+    required: true
+  algorithm_hash:
+    description: 'The Algorithm git hash describing the version you wish to test'
+    required: True
+  cases:
+    description: 'A list of Json Case objects that describe the desired test cases'
+    required: True
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.api_key }}
+    - ${{ inputs.api_address }}
+    - ${{ inputs.algorithm_name }}
+    - ${{ inputs.algorithm_hash }}
+    - ${{ inputs.cases }}

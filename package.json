@@ -1,0 +1,29 @@
+
+{
+  "name": "test-algo",
+  "version": "0.1.0",
+  "description": "tests an Algorithm",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc && ncc build && node lib/misc/generate-docs.js",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithmiaio/test-algo-action.git"
+  },
+  "keywords": [
+    "algorithmiaio",
+    "actions",
+    "Continuous Integration",
+    "Continuous Delivery",
+  ],
+  "author": "Algorithmia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algorithmiaio/test-algo-action/issues"
+  },
+}
