@@ -20,7 +20,7 @@ if __name__ == "__main__":
         input = case['input']
         expected = case['expected_output']
         name = case['case_name']
-        output = client.algo("{}/{}".format(algo_name, algo_hash)).pipe(input)
+        output = client.algo("{}/{}".format(algo_name, algo_hash)).pipe(input).result
         print("case: {}".format(name))
         if output == expected:
             print("pass")
