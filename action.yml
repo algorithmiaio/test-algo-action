@@ -15,9 +15,6 @@ inputs:
   algorithm_name:
     description: 'The name of the Algorithm you want to test'
     required: true
-  algorithm_hash:
-    description: 'The Algorithm git hash describing the version you wish to test'
-    required: True
   cases:
     description: 'A list of Json Case objects that describe the desired test cases'
     required: True
@@ -29,5 +26,4 @@ runs:
     - ${{ inputs.api_key }}
     - ${{ inputs.api_address }}
     - ${{ inputs.algorithm_name }}
-    - ${{ inputs.algorithm_hash }}
     - ${{ inputs.cases }}
