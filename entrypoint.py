@@ -1,12 +1,11 @@
 #!/usr/bin/python
 
 import Algorithmia
-import sys
 import json
 import os
 
 if __name__ == "__main__":
-    api_key = os.getenv("INPUT_API_KEY")
+    api_key = os.getenv("INPUT_REGULAR_API_KEY")
     api_address = os.getenv("INPUT_API_ADDRESS")
     algo_name = os.getenv("INPUT_ALGORITHM_NAME")
     case_data = os.getenv("INPUT_CASES")
