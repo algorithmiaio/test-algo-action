@@ -3,7 +3,7 @@
   "name": "test-algo",
   "version": "0.1.0",
   "description": "tests an Algorithm",
-  "main": "lib/main.js",
+  "main": "action.yml",
   "scripts": {
     "build": "tsc && ncc build && node lib/misc/generate-docs.js",
     "format": "prettier --write **/*.ts",

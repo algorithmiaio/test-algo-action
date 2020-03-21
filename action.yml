@@ -5,8 +5,8 @@ branding:
   icon: 'alert-circle'
   color: 'purple'
 inputs:
-  api_key:
-    description: 'your Algorithmia API key'
+  regular_api_key:
+    description: 'your typical Algorithmia API key'
     required: true
   api_address:
     description: 'The API address for the Algorithmia Cluster you wish to connect to'

@@ -9,8 +9,9 @@ if __name__ == "__main__":
     api_key = os.getenv("INPUT_API_KEY")
     api_address = os.getenv("INPUT_API_ADDRESS")
     algo_name = os.getenv("INPUT_ALGORITHM_NAME")
-    algo_hash = os.getenv("GITHUB_SHA")
     case_data = os.getenv("INPUT_CASES")
+
+    algo_hash = os.getenv("GITHUB_SHA")
 
     client = Algorithmia.client(api_key=api_key, api_address=api_address)
     cases = json.loads(case_data)
